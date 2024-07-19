@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-yetanothersafetychecker"
+description = "A simple node to filter NSFW outputs using AdamCodd/vit-base-nsfw-detector."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/BetaDoggo/ComfyUI-YetAnotherSafetyChecker"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "betadoggo"
+DisplayName = "ComfyUI-YetAnotherSafetyChecker"
+Icon = ""
