@@ -18,7 +18,7 @@ class YetAnotherSafetyChecker:
             },
         }
 
-    RETURN_TYPES = ("IMAGE", "IMAGE", "STRING")
+    RETURN_TYPES = ("IMAGE", "STRING")
     FUNCTION = "process_images"
 
     CATEGORY = "image/processing"
@@ -34,7 +34,7 @@ class YetAnotherSafetyChecker:
         output = image
         if(float(score) > threshold):
             output = torch.zeros(1, 512, 512, dtype=torch.float32) #create black image tensor
-        return (output, image, str(score))
+        return (output, str(score))
     
 NODE_CLASS_MAPPINGS = {
     "YetAnotherSafetyChecker": YetAnotherSafetyChecker
