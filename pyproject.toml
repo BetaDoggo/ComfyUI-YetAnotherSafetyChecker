@@ -1,6 +1,6 @@
 [project]
 name = "comfyui-yetanothersafetychecker"
-description = "Just a simple node to filter out NSFW outputs. This node utilizes [a/AdamCodd/vit-base-nsfw-detector](https://huggingface.co/AdamCodd/vit-base-nsfw-detector) to score the outputs. I chose this model because it's small, fast, and performed very well in my testing. Nudity tends to be scored in the 0.95+ range, but I've set the default to 0.8 as a safe baseline."
+description = "A simple node to filter NSFW outputs using AdamCodd/vit-base-nsfw-detector."
 version = "1.0.0"
 license = {file = "LICENSE"}
 
@@ -9,6 +9,6 @@ Repository = "https://github.com/BetaDoggo/ComfyUI-YetAnotherSafetyChecker"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "betadoggo"
 DisplayName = "ComfyUI-YetAnotherSafetyChecker"
 Icon = ""
